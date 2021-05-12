@@ -13,3 +13,14 @@
 # limitations under the License.
 
 runtime: java11
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 1
+
+handlers:
+
+- url: /assets
+  static_dir: assets
+  http_headers:
+    Access-Control-Allow-Origin: https://app.fizjoterapia.uk
